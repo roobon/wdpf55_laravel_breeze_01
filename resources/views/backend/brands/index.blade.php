@@ -15,7 +15,7 @@
             <td>{{ $brand->name }}</td>
             <td>{{ $brand->description }}</td>
             <td>
-                <form action="{{ route('brands.destroy',$brand->id) }}" method="POST">
+                <form action="{{ route('brands.destroy', $brand->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('brands.show',$brand->id) }}">Show</a>
     
