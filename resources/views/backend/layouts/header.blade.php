@@ -25,6 +25,13 @@
         <i class="bi bi-search"></i>
       </a>
     </li><!-- End Search Icon-->
+    <li  class="nav-item">
+      <a class="nav-link nav-icon" href="{{url('cart')}}">Cart<span class="badge bg-primary badge-number"> {{ 
+       count(session()->get('cart'))
+    
+      }}
+      </span></a>
+    </li>
 
     <li class="nav-item dropdown">
 

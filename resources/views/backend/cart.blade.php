@@ -70,6 +70,7 @@
             <td colspan="5" class="text-right">
                 <a href="{{ url('/') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a>
                 <button class="btn btn-success">Checkout</button>
+                <button class="btn btn-info">Order</button>
             </td>
         </tr>
     </tfoot>
