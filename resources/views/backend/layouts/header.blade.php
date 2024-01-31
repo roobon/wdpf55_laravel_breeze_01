@@ -26,10 +26,7 @@
       </a>
     </li><!-- End Search Icon-->
     <li  class="nav-item">
-      <a class="nav-link nav-icon" href="{{url('cart')}}">Cart<span class="badge bg-primary badge-number"> {{ 
-       count(session()->get('cart'))
-    
-      }}
+      <a class="nav-link nav-icon" href="{{url('cart')}}">Cart<span class="badge bg-primary badge-number"> {{ is_array(session()->get('cart')) ? count(session()->get('cart')) : 0 }}
       </span></a>
     </li>
 
