@@ -34,7 +34,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <label>First Name *</label>
-                                        <input type="text" class="form-control" name="name">
+                                        <input type="text" class="form-control" name="first_name">
                                     </div>
 
                                 </div>
@@ -42,10 +42,10 @@
                                 <input type="email" class="form-control" name="email">
 
                                 <label>Contact Number *</label>
-                                <input type="text" class="form-control" name="contact">
+                                <input type="text" class="form-control" name="phone">
 
                                 <label>Street address *</label>
-                                <input type="text" class="form-control" placeholder="House number and Street name"  name="address">
+                                <input type="text" class="form-control" placeholder="House number and Street name"  name="address1">
                                 <label>Total *</label>
                                 <input type="text" class="form-control" name="price">
 
@@ -95,8 +95,8 @@
                                         <tr class="summary-total">
                                             <td>Total:</td>
                                             <td>${{ $subtotal }}</td>
-                                        <input type="hidden" name="subtotal" value="{{ $subtotal }}">
-                                        <input type="hidden" name="total" value="{{ $subtotal }}">
+                                        <input type="hidden" name="sub_total" value="{{ $subtotal }}">
+                                        <input type="hidden" name="total_amount" value="{{ $subtotal }}">
                                         </tr>
                                         
                                         @endif
